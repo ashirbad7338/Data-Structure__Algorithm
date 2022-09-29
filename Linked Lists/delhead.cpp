@@ -8,9 +8,8 @@ struct node{
         next=NULL;
     }
 };
-void printlist(node *head){
-    node *curr=head;
-    while(curr->next!=NULL){
+void printlist(node *curr){
+    while(curr!=NULL){
         cout<<curr->data<<" ";
         curr=curr->next;
     }
@@ -21,10 +20,9 @@ node *delhead(node *head){
     }
     else{
         node *temp=head->next;
-        delete head;
+        free(head);
         return temp;
     }
-
 }
 int main(){
     node *head = new node(10);
@@ -34,5 +32,4 @@ int main(){
     n1->next=n2;
     head=delhead(head);
     printlist(head);
-
 }
