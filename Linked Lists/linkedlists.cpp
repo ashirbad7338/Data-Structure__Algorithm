@@ -28,7 +28,6 @@ void printlist(node *head){
     }
 }
 
-
 int main(){
     node *head=new node(10);
     node *n1=new node(20);
@@ -37,6 +36,7 @@ int main(){
     n1->next=n2;
     printlist(head);
     head=reverse(head);
+    cout<<endl;
     printlist(head);
 
 }
