@@ -30,6 +30,7 @@ int search(node *head,int key){
             curr=curr->next;
         }
     }
+    return -1;
 }
 int main(){
     node *head=new node(10);
@@ -37,6 +38,6 @@ int main(){
     node *n2=new node (30);
     head->next=n1;
     n1->next=n2;
-    cout<<search(head,10)<<endl;
+    cout<<search(head,20)<<endl;
     printlist(head);
 }
