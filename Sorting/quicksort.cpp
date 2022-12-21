@@ -7,7 +7,7 @@ int partition(int arr[],int lb, int up){
      if(arr[j]<pivot){   
             i++;
             swap(arr[i],arr[j]);
-         }
+        }
     }
     swap(arr[i+1],arr [up]);
     return (i+1);

@@ -79,5 +79,4 @@ int main(){
     n2->prev=n1;
     head=insertend(head,40);
     printlist(head);
-
 }

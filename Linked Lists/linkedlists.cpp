@@ -38,5 +38,4 @@ int main(){
     head=reverse(head);
     cout<<endl;
     printlist(head);
-
 }

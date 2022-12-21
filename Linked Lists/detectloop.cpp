@@ -1,4 +1,4 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 struct node {
     int data;
@@ -27,7 +27,6 @@ bool isloop(node *head){
         curr=curr_next;
     }
     return false;
-
 }
 int main(){
     node *head=new node(10);

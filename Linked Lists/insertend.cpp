@@ -27,7 +27,6 @@ void printlist(node *head){
         curr=curr->next;
     }
 }
-
 int main(){
     node *head=new node(10);
     node *n1=new node(20);
